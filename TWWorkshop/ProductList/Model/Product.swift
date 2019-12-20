@@ -8,9 +8,11 @@
 
 import Foundation
 
-struct Product {
+struct Product: Codable {
     
-    var imageUrl: String?
-    var productName: String
-    var price: String
+    let imageUrl: String?
+    let productName: String
+    let price: String
+    let offerPrice: String?
+    let pid: String
 }
